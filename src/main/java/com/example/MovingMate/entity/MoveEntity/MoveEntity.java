@@ -1,4 +1,4 @@
-package com.example.MovingMate.entity;
+package com.example.MovingMate.entity.MoveEntity;
 
 
 import com.example.MovingMate.entity.base.BaseEntity;
@@ -33,5 +33,9 @@ public class MoveEntity extends BaseEntity {
 
     @Column(nullable = false)
     private String moveType;
+
+    @Column(name = "start")
+    private String start;   // 캘린더에서 선택한 날짜
+
 
 }
