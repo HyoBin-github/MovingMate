@@ -1,27 +1,30 @@
 package com.example.MovingMate.dto;
+import lombok.*;
+import java.time.LocalDateTime;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class MoveDto {
 
-    private Long move_id;
+    private Long id;
 
-    private String name;
-
-    private String moveType;
+    private String moveWriter;
 
     private String phone;
 
     private String firstAddress;
 
     private String endAddress;
+
+    private String moveType;
+
+    private String start;
+    private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
 
 }
